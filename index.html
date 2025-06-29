@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Leonardo Rodrigues</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding-top: 70px;
+      background-color: #fdf9fc;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #c088d3;
+      color: #fff;
+    }
+
+    .hobby-icon {
+      font-size: 3rem;
+      color: #9333ea;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #9333ea;
+    }
+
+    .form-control, .form-label {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Leonardo Rodrigues</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#identificacao">Identificação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#atuacao">Atuação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="identificacao" class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-3">Identificação</h2>
+      <img src="minhafoto.jpg" class="rounded-circle mb-3 shadow" alt="Foto de Leonardo" width="180" height="180">
+      <p class="lead">Olá! Eu sou Leonardo Rodrigues, um futuro desenvolvedor com muita sede de aprendizado.</p>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <div class="container">
+      <h2 class="text-center mb-4">Formação Acadêmica</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">CED 03 Sobradinho (2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="atuacao" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Atuação Profissional</h2>
+      <div class="accordion" id="experiencias">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1">
+              Analista de Dados
+            </button>
+          </h2>
+          <div id="exp1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Coleto informações de diversas fontes, como bancos de dados, planilhas, APIs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2">
+              Buscando novas experiências
+            </button>
+          </h2>
+          <div id="exp2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Buscando experiências no ramo da programação.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <div class="container">
+      <h2 class="text-center mb-4">Hobbies</h2>
+      <div class="row text-center mb-4">
+        <div class="col-md-4">
+          <i class="bi bi-bicycle hobby-icon"></i>
+          <p>Pedalar</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-music-note hobby-icon"></i>
+          <p>Música</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-camera hobby-icon"></i>
+          <p>Festas</p>
+        </div>
+      </div>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo sobre tecnologia" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="seuemail@email.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3">
+    © 2025 Leonardo Rodrigues
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
